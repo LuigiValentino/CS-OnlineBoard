@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+body {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  font-family: "Rajdhani", sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/wallpaper.webp);
+}
+
+.main-container {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.925);
+  border: 2px solid #333;
+  backdrop-filter: blur(8px);
+}
+
+.map-container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-right: 2px solid #333;
+}
+.map-container object {
+  width: 100%;
+  height: 90%;
+  max-width: 900px;
+  max-height: 700px;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sidebar header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.sidebar header h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4c6b89;
+  text-align: left;
+  margin-left: 10px;
+}
+.sidebar .map-selector {
+  margin-bottom: 20px;
+}
+.sidebar .map-selector label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+  color: white;
+}
+.sidebar .map-selector select {
+  padding: 10px;
+  border: 2px solid white;
+  background-color: #000;
+  color: #ffffff;
+  font-family: "Rajdhani", sans-serif;
+  width: 100%;
+}
+.sidebar .map-selector input[type=file] {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #222;
+  border: 2px solid #4c6b89;
+  font-family: "Rajdhani", sans-serif;
+}
+.sidebar #titulo {
+  font-family: "SUSE", sans-serif;
+  color: white;
+}
+.sidebar #icon {
+  width: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.sidebar .tools, .sidebar .icons {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .tools button, .sidebar .icons button {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #333;
+  color: #ffffff;
+  border: 3px solid #4c6b89;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Rajdhani", sans-serif;
+  width: 80%;
+  cursor: pointer;
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
+.sidebar .tools button:hover, .sidebar .icons button:hover {
+  background-color: #222;
+  color: white;
+  border-color: #c9b08e;
+  transform: scale(1.05);
+}
+.sidebar .tools button i, .sidebar .icons button i {
+  margin-right: 8px;
+}
+.sidebar .tools button.clear-btn, .sidebar .icons button.clear-btn {
+  border-color: none;
+  padding-left: 20px;
+  border: none;
+  width: 60px;
+}
+.sidebar .tools button.clear-btn:hover, .sidebar .icons button.clear-btn:hover {
+  background-color: #ff4d4d;
+  color: #fff;
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
+.sidebar .tools button.export-btn, .sidebar .icons button.export-btn {
+  background-color: #4c6b89;
+  width: auto;
+  padding: 15px 20px;
+  height: 60px;
+}
+.sidebar .tools button.export-btn:hover, .sidebar .icons button.export-btn:hover {
+  background-color: #6185a7;
+  color: #fff;
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
+.sidebar .action-buttons {
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  gap: 10px;
+}
+.sidebar button:hover {
+  transition: background-color 0.7s ease;
+}
+.sidebar .ct-btn:hover {
+  background-color: #4c6b89;
+  color: #fff;
+}
+.sidebar .tt-btn:hover {
+  background-color: #c9b08e;
+  color: #000;
+}
+
+#footer a {
+  color: white;
+}
+#footer a:hover {
+  color: #c9b08e;
+  transition: 0.7s;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .map-container {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #333;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS OnlineBoard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="js/script.js"></script>
+    <link rel="shortcut icon" href="./img/icon.webp" type="image/x-icon">
+</head>
+<body>
+    <div class="main-container">
+        <div class="map-container">
+            <object id="map-svg" type="image/svg+xml" data="maps/de_nuke.svg"></object>
+        </div>
+        <div class="sidebar">
+            <header>
+                <img src="./img/icon.webp" id="icon">
+                <h1 id="titulo"> CS OnlineBoard</h1>
+            </header>
+
+            <div class="map-selector">
+                <label for="map-select">Selecciona un mapa:</label>
+                <select id="map-select">
+                    <option value="de_dust2.svg">Dust2 CS2</option>
+                    <option value="de_mirage.svg">Mirage CS2</option>
+                    <option value="de_inferno.svg">Inferno CS2</option>
+                    <option value="de_nuke.svg" selected>Nuke CS2</option>
+                    <option value="de_ancient.svg">Ancient CS2</option>
+                    <option value="de_anubis.svg">Anubis CS2</option>
+                    <option value="de_overpass.svg">Overpass - CSGO</option>
+                    <option value="de_vertigo.svg">Vertigo - Sin update</option>
+                    <option value="de_cbble.svg">Cobblestone - CSGO</option>
+                    <option value="de_canals.svg">Canals - CSGO</option>
+                </select>
+            </div>
+
+            <div class="tools">
+                <button id="color-white" class="color-btn"><i class="fas fa-pencil-alt"></i> Dibujar en Blanco</button>
+                <button id="color-blue" class="color-btn"><i class="fas fa-pencil-alt"></i> Dibujar en Azul</button>
+                <button id="color-yellow" class="color-btn"><i class="fas fa-pencil-alt"></i> Dibujar en Amarillo</button>
+            </div>
+
+            <div class="icons">
+                <div class="action-buttons">
+                    <button id="add-ct" class="action-btn"><i class="fas fa-shield-alt"></i> Añadir CT</button>
+                    <button id="add-tt" class="action-btn"><i class="fas fa-bomb"></i> Añadir TT</button>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="export" class="export-btn"><i class="fas fa-file-export"></i> Exportar Imagen</button>
+                    <button id="clear" class="clear-btn"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+            <p id="footer">- Página programada por <a href="https://github.com/LuigiValentino">Luigi Adducci</a>- Mapas sacados de <a href="https://blitz.gg/cs2">Blitz</a> -</p>
+        </div>
+    </div>
+</body>
+</html>
